@@ -76,7 +76,7 @@ For the purpose of this guide the management was allowed, however production use
    - Select **Network Adapter**
    - Connect to LAN virtual switch
 
-     ![image](https://github.com/user-attachments/assets/c009d110-e48a-4184-bce9-c8bf6c464f1d)
+      ![image](https://github.com/user-attachments/assets/19072ee2-e960-446a-bc66-ca69fd2a9635)
 
 
 1. Disable Secure Boot:
@@ -92,11 +92,8 @@ For the purpose of this guide the management was allowed, however production use
    - Move Hard Drive to top of boot order
 
    
-   ![image](https://github.com/user-attachments/assets/1b9426fd-472d-4f21-bbcc-021692945d6e)
+ ![image](https://github.com/user-attachments/assets/51d3f281-ec60-4f3c-8d74-0f2c6db4fe68)
 
-
-
-## Installation Process
 
 1. Start VM and connect to console
 2. Accept EULA
@@ -106,6 +103,7 @@ For the purpose of this guide the management was allowed, however production use
 ## First Boot Configuration
 
 1. Interface Assignment:
+
    ```
    VLAN setup: n
    WAN interface: hn0
@@ -113,7 +111,7 @@ For the purpose of this guide the management was allowed, however production use
    Proceed: y
    ```
 
-2. Verify interface IP assignments:
+3. Verify interface IP assignments:
    - WAN should receive IP via DHCP or your configured method
    - LAN default: 192.168.1.1/24
 
