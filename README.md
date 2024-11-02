@@ -138,8 +138,7 @@ For the purpose of this guide the management was allowed, however production use
    - WAN should receive IP via DHCP or your configured method
    - LAN default: 192.168.1.1/24
 
-   ![image](https://github.com/user-attachments/assets/7fdaa772-8601-4cfe-9e64-7de712f19267)
-
+    ![image](https://github.com/user-attachments/assets/1046724f-9608-4544-a939-8ed6f36890e8)
 
 ## Next Steps
 
