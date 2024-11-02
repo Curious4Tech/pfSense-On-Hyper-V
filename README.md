@@ -18,11 +18,11 @@ A comprehensive guide for installing pfSense® software in a virtual machine und
 1. Open Hyper-V Manager
 2. Click **Virtual Switch Manager** from **Actions** menu
    
- ![image](https://github.com/user-attachments/assets/dec29713-6d0d-42de-8ec1-a26d34a67f68)
+   ![image](https://github.com/user-attachments/assets/dec29713-6d0d-42de-8ec1-a26d34a67f68)
 
 ### 2. Create LAN Virtual Switch
 
- ![image](https://github.com/user-attachments/assets/f69be430-a835-40d0-8a66-fc937f15f177)
+   ![image](https://github.com/user-attachments/assets/f69be430-a835-40d0-8a66-fc937f15f177)
  
 1. Create new switch:
    - **Type**: Private
@@ -32,12 +32,12 @@ A comprehensive guide for installing pfSense® software in a virtual machine und
    - Set an appropriate description in the **Notes** field 
    
 
-   ![image](https://github.com/user-attachments/assets/c3ec04eb-8221-4bed-9da0-4b573106f86c)
+    ![image](https://github.com/user-attachments/assets/c3ec04eb-8221-4bed-9da0-4b573106f86c)
 
 ### 3. Create WAN Virtual Switch
 
 
-   ![image](https://github.com/user-attachments/assets/b4ed8bdd-273f-45f4-9abd-a8db1ba1550d)
+    ![image](https://github.com/user-attachments/assets/b4ed8bdd-273f-45f4-9abd-a8db1ba1550d)
 
 1. Create another switch: 
    - **Type**: External
@@ -45,7 +45,7 @@ A comprehensive guide for installing pfSense® software in a virtual machine und
    - Select appropriate physical network adapter
    - Optional: Uncheck "**Allow management operating system to share this network adapter**" if using dedicated WAN interface
 
-     ![image](https://github.com/user-attachments/assets/741738ad-603b-4034-9bb5-8aea845f5063)
+    ![image](https://github.com/user-attachments/assets/741738ad-603b-4034-9bb5-8aea845f5063)
 
 For the purpose of this guide the management was allowed, however production use requires a separate NIC for WAN.
  
@@ -56,12 +56,12 @@ For the purpose of this guide the management was allowed, however production use
    - **Name**: pfSense
    - **Generation**: 2
 
- ![image](https://github.com/user-attachments/assets/04dce181-44d8-40c2-9b02-f3deec419e3d)
+     ![image](https://github.com/user-attachments/assets/04dce181-44d8-40c2-9b02-f3deec419e3d)
 
    - **Memory**: 1GB minimum (2GB recommended for packages)
    - **Network**: Select WAN switch
 
-     ![image](https://github.com/user-attachments/assets/4a480f42-6c5a-4c15-9712-00eddfa42a5b)
+      ![image](https://github.com/user-attachments/assets/4a480f42-6c5a-4c15-9712-00eddfa42a5b)
 
    - **Hard Disk**: 10-20GB (more if using IDS/IPS packages)
    - **Installation media**: Select pfSense ISO
@@ -70,22 +70,31 @@ For the purpose of this guide the management was allowed, however production use
 
 1. Add LAN Network Adapter:
    - **Settings → Add Hardware**
-
-    ![image](https://github.com/user-attachments/assets/f1a43042-a4af-4fa4-9b66-08e5b463d871)
+ 
+     ![image](https://github.com/user-attachments/assets/f1a43042-a4af-4fa4-9b66-08e5b463d871)
 
    - Select **Network Adapter**
    - Connect to LAN virtual switch
 
-    ![image](https://github.com/user-attachments/assets/c009d110-e48a-4184-bce9-c8bf6c464f1d)
+     ![image](https://github.com/user-attachments/assets/c009d110-e48a-4184-bce9-c8bf6c464f1d)
 
 
 1. Disable Secure Boot:
    - **Settings → Security**
    - Uncheck **Enable Secure Boot**
+  
+
+    ![image](https://github.com/user-attachments/assets/09398d2b-4178-4e92-8cae-3b6b3cb35008)
+
 
 2. Adjust Boot Order:
    - **Settings → Firmware**
    - Move Hard Drive to top of boot order
+
+   
+   ![image](https://github.com/user-attachments/assets/1b9426fd-472d-4f21-bbcc-021692945d6e)
+
+
 
 ## Installation Process
 
