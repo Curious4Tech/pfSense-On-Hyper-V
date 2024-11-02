@@ -33,19 +33,23 @@ A comprehensive guide for installing pfSense® software in a virtual machine und
    
 
     ![image](https://github.com/user-attachments/assets/c3ec04eb-8221-4bed-9da0-4b573106f86c)
+   
 
 ### 3. Create WAN Virtual Switch
 
 
     ![image](https://github.com/user-attachments/assets/b4ed8bdd-273f-45f4-9abd-a8db1ba1550d)
+    
 
 1. Create another switch: 
    - **Type**: External
    - **Name**: WAN
    - Select appropriate physical network adapter
    - Optional: Uncheck "**Allow management operating system to share this network adapter**" if using dedicated WAN interface
+   - 
 
     ![image](https://github.com/user-attachments/assets/741738ad-603b-4034-9bb5-8aea845f5063)
+   
 
 For the purpose of this guide the management was allowed, however production use requires a separate NIC for WAN.
  
@@ -60,8 +64,11 @@ For the purpose of this guide the management was allowed, however production use
 
    - **Memory**: 1GB minimum (2GB recommended for packages)
    - **Network**: Select WAN switch
+   - 
 
       ![image](https://github.com/user-attachments/assets/4a480f42-6c5a-4c15-9712-00eddfa42a5b)
+
+     
 
    - **Hard Disk**: 10-20GB (more if using IDS/IPS packages)
    - **Installation media**: Select pfSense ISO
@@ -70,11 +77,14 @@ For the purpose of this guide the management was allowed, however production use
 
 1. Add LAN Network Adapter:
    - **Settings → Add Hardware**
+     
  
      ![image](https://github.com/user-attachments/assets/f1a43042-a4af-4fa4-9b66-08e5b463d871)
+     
 
    - Select **Network Adapter**
    - Connect to LAN virtual switch
+     
 
       ![image](https://github.com/user-attachments/assets/19072ee2-e960-446a-bc66-ca69fd2a9635)
 
