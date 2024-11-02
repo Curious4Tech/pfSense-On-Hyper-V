@@ -32,6 +32,8 @@ A comprehensive guide for installing pfSense® software in a virtual machine und
    - Set an appropriate description in the **Notes** field 
    
 
+   ![image](https://github.com/user-attachments/assets/c3ec04eb-8221-4bed-9da0-4b573106f86c)
+
 ### 3. Create WAN Virtual Switch
 
 
@@ -53,8 +55,14 @@ For the purpose of this guide the management was allowed, however production use
 2. Configure basic settings:
    - **Name**: pfSense
    - **Generation**: 2
+
+ ![image](https://github.com/user-attachments/assets/04dce181-44d8-40c2-9b02-f3deec419e3d)
+
    - **Memory**: 1GB minimum (2GB recommended for packages)
    - **Network**: Select WAN switch
+
+     ![image](https://github.com/user-attachments/assets/4a480f42-6c5a-4c15-9712-00eddfa42a5b)
+
    - **Hard Disk**: 10-20GB (more if using IDS/IPS packages)
    - **Installation media**: Select pfSense ISO
 
@@ -62,14 +70,20 @@ For the purpose of this guide the management was allowed, however production use
 
 1. Add LAN Network Adapter:
    - **Settings → Add Hardware**
+
+    ![image](https://github.com/user-attachments/assets/f1a43042-a4af-4fa4-9b66-08e5b463d871)
+
    - Select **Network Adapter**
    - Connect to LAN virtual switch
 
-2. Disable Secure Boot:
+    ![image](https://github.com/user-attachments/assets/c009d110-e48a-4184-bce9-c8bf6c464f1d)
+
+
+1. Disable Secure Boot:
    - **Settings → Security**
    - Uncheck **Enable Secure Boot**
 
-3. Adjust Boot Order:
+2. Adjust Boot Order:
    - **Settings → Firmware**
    - Move Hard Drive to top of boot order
 
