@@ -16,7 +16,7 @@ A comprehensive guide for installing pfSense® software in a virtual machine und
 
 ### 1. Create LAN Virtual Switch
 1. Open Hyper-V Manager
-2. Click "Virtual Switch Manager" from Actions menu
+2. Click **Virtual Switch Manager** from Actions menu
 3. Create new switch:
    - Type: Private
    - Name: LAN
@@ -43,16 +43,16 @@ A comprehensive guide for installing pfSense® software in a virtual machine und
 ### Post-Creation Configuration
 
 1. Add LAN Network Adapter:
-   - Settings → Add Hardware
-   - Select Network Adapter
+   - **Settings → Add Hardware**
+   - Select **Network Adapter**
    - Connect to LAN virtual switch
 
 2. Disable Secure Boot:
-   - Settings → Security
-   - Uncheck "Enable Secure Boot"
+   - **Settings → Security**
+   - Uncheck **Enable Secure Boot**
 
 3. Adjust Boot Order:
-   - Settings → Firmware
+   - **Settings → Firmware**
    - Move Hard Drive to top of boot order
 
 ## Installation Process
