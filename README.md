@@ -108,8 +108,18 @@ For the purpose of this guide the management was allowed, however production use
 
 1. Start VM and connect to console
 2. Accept EULA
+
+
+  ![image](https://github.com/user-attachments/assets/67493a10-6ada-4e77-8bad-48eb2c36a4ab)
+  
+
 3. Follow standard pfSense installation steps
-4. When installation completes, remove ISO and reboot
+
+
+ ![image](https://github.com/user-attachments/assets/2efc2f6c-69c6-4ba1-9f63-4ad65257b73b)
+ 
+
+6. When installation completes, remove ISO and reboot
 
 ## First Boot Configuration
 
@@ -122,9 +132,14 @@ For the purpose of this guide the management was allowed, however production use
    Proceed: y
    ```
 
+   ![image](https://github.com/user-attachments/assets/6d52c95d-1f9e-4ac6-ac25-cf44ba36691f)
+
 3. Verify interface IP assignments:
    - WAN should receive IP via DHCP or your configured method
    - LAN default: 192.168.1.1/24
+
+   ![image](https://github.com/user-attachments/assets/7fdaa772-8601-4cfe-9e64-7de712f19267)
+
 
 ## Next Steps
 
