@@ -33,7 +33,9 @@ A comprehensive guide for installing pfSense® software in a virtual machine und
    
 
 ### 3. Create WAN Virtual Switch
-    ![image](https://github.com/user-attachments/assets/b4ed8bdd-273f-45f4-9abd-a8db1ba1550d)
+
+
+   ![image](https://github.com/user-attachments/assets/b4ed8bdd-273f-45f4-9abd-a8db1ba1550d)
 
 1. Create another switch: 
    - **Type**: External
