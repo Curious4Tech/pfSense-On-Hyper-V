@@ -4,7 +4,7 @@
 
 A comprehensive guide for installing pfSense® software in a virtual machine under Microsoft Hyper-V. This guide is applicable to any Hyper-V version, including desktop and standalone Hyper-V Server.
 
-> **Note:** While virtualization is convenient, if pfSense will be used as a perimeter firewall where security is critical, consider running it on dedicated hardware to minimize the attack surface.
+ **Note:** While virtualization is convenient, if pfSense will be used as a perimeter firewall where security is critical, consider running it on dedicated hardware to minimize the attack surface.
 
 ## Prerequisites
 
@@ -16,8 +16,15 @@ A comprehensive guide for installing pfSense® software in a virtual machine und
 
 ### 1. Create LAN Virtual Switch
 1. Open Hyper-V Manager
-2. Click **Virtual Switch Manager** from Actions menu
-3. Create new switch:
+2. Click **Virtual Switch Manager** from **Actions** menu
+   
+ ![image](https://github.com/user-attachments/assets/dec29713-6d0d-42de-8ec1-a26d34a67f68)
+
+### 2. Create LAN Virtual Switch
+
+ ![image](https://github.com/user-attachments/assets/f69be430-a835-40d0-8a66-fc937f15f177)
+ 
+1. Create new switch:
    - **Type**: Private
    - **Name**: LAN
    - **Connection type**: Private network
@@ -25,14 +32,19 @@ A comprehensive guide for installing pfSense® software in a virtual machine und
    - Set an appropriate description in the **Notes** field 
    
 
-### 2. Create WAN Virtual Switch
-1. Create another switch:
+### 3. Create WAN Virtual Switch
+    ![image](https://github.com/user-attachments/assets/b4ed8bdd-273f-45f4-9abd-a8db1ba1550d)
+
+1. Create another switch: 
    - **Type**: External
    - **Name**: WAN
    - Select appropriate physical network adapter
    - Optional: Uncheck "**Allow management operating system to share this network adapter**" if using dedicated WAN interface
-For the purpose of this guide the management was allowed, however production use requires a separate NIC for WAN.
 
+     ![image](https://github.com/user-attachments/assets/741738ad-603b-4034-9bb5-8aea845f5063)
+
+For the purpose of this guide the management was allowed, however production use requires a separate NIC for WAN.
+ 
 ## Creating the Virtual Machine
 
 1. Start New Virtual Machine Wizard
@@ -93,10 +105,4 @@ For the purpose of this guide the management was allowed, however production use
 - Increase virtual disk size if planning to use bandwidth-intensive packages
 - Make sure both network adapters are connected to correct virtual switches
 
-## Contributing
-
-Feel free to submit issues and enhancement requests!
-
-## License
-
-This guide is provided under the [MIT License](LICENSE). pfSense® is a registered trademark of Rubicon Communications, LLC (Netgate).
+Congratulations! The virtual machine is now running pfSense software on Microsoft Hyper-V.
