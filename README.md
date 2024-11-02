@@ -27,7 +27,7 @@ A comprehensive guide for installing pfSense® software in a virtual machine und
    - Type: External
    - Name: WAN
    - Select appropriate physical network adapter
-   - Optional: Uncheck "Allow management operating system to share this network adapter" if using dedicated WAN interface
+   - Optional: Uncheck **Allow management operating system to share this network adapter** if using dedicated WAN interface
 
 ## Creating the Virtual Machine
 
