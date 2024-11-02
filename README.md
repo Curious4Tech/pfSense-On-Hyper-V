@@ -18,27 +18,31 @@ A comprehensive guide for installing pfSense® software in a virtual machine und
 1. Open Hyper-V Manager
 2. Click **Virtual Switch Manager** from Actions menu
 3. Create new switch:
-   - Type: Private
-   - Name: LAN
-   - Connection type: Private network
+   - **Type**: Private
+   - **Name**: LAN
+   - **Connection type**: Private network
+   - Click **Apply**
+   - Set an appropriate description in the **Notes** field 
+   
 
 ### 2. Create WAN Virtual Switch
 1. Create another switch:
-   - Type: External
-   - Name: WAN
+   - **Type**: External
+   - **Name**: WAN
    - Select appropriate physical network adapter
    - Optional: Uncheck "**Allow management operating system to share this network adapter**" if using dedicated WAN interface
+For the purpose of this guide the management was allowed, however production use requires a separate NIC for WAN.
 
 ## Creating the Virtual Machine
 
 1. Start New Virtual Machine Wizard
 2. Configure basic settings:
-   - Name: pfSense
-   - Generation: 2
-   - Memory: 1GB minimum (2GB recommended for packages)
-   - Network: Select WAN switch
-   - Hard Disk: 10-20GB (more if using IDS/IPS packages)
-   - Installation media: Select pfSense ISO
+   - **Name**: pfSense
+   - **Generation**: 2
+   - **Memory**: 1GB minimum (2GB recommended for packages)
+   - **Network**: Select WAN switch
+   - **Hard Disk**: 10-20GB (more if using IDS/IPS packages)
+   - **Installation media**: Select pfSense ISO
 
 ### Post-Creation Configuration
 
