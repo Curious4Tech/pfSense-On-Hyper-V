@@ -145,6 +145,11 @@ For the purpose of this guide the management was allowed, however production use
 - Access web configurator via LAN interface (default: https://192.168.1.1)
 - Complete initial setup wizard
 - Configure firewall rules and additional features as needed
+  
+
+ ![pic1](https://github.com/user-attachments/assets/127ec3b6-873c-49ad-9121-90baf3308754)
+
+
 
 ## Tips and Troubleshooting
 
